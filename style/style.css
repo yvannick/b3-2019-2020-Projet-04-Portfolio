@@ -1,0 +1,151 @@
+body {
+    background-color: #3c40c6;
+    /* width: 80%; */
+}
+
+/*MENU FIXE*/
+/*POSITIONS*/
+.nom {
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    z-index: 10;
+    /* writing-mode: vertical-rl; */
+}
+
+.contact {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    z-index: 10;
+    /* writing-mode: vertical-rl; */
+}
+
+/*                */
+
+nav {
+    display: block;
+}
+ul {
+    list-style: none;
+}
+header div nav li {
+    float: left;
+}
+nav li a {
+    border: none;
+    color: black;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+/*                */
+/*TAILLE DES BLOCS*/
+section{
+    margin-top: 100px;
+}
+
+@media (max-width: 700px){
+    .item {
+    float: left;
+    width: 100%;
+}
+}
+@media (min-width: 701px){
+    .item {
+    float: left;
+    width: 25%;
+    width: calc(100% / 3);
+}
+}
+
+.itemcontainer {
+    margin: 20px;
+}
+
+/*TAILLE IMAGES*/
+
+figure {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: relative;
+    display: block;
+    font-size: 100%;
+}
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*TEXTES LIEN*/
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+a {
+color: white;
+text-decoration: none;
+}
+
+/*ANIMATIONS*/
+
+.overlay {
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    right: 0;
+    background-color: #ff3f34;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform:scale(0);
+    transition: .3s ease;
+}
+
+.container:hover .overlay {
+    transform: scale(1)
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    margin: 0px 0px 10px;
+    width: 100%;
+    text-align: center;
+    color: #aaa;
+    text-transform: uppercase;
+    font-size: 0.5em;
+    line-height: 1.5em;
+}
+
+footer p {
+    vertical-align: inherit;
+    font-family: Helvetica, sans-serif;
+}
