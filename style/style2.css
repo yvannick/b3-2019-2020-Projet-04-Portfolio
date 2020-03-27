@@ -21,6 +21,24 @@ body {
 
 /*                */
 
+div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 940px;
+}
+
+img {
+  width: 33%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.cover {
+  object-fit: cover;
+}
+
 nav {
     display: block;
 }
@@ -46,7 +64,7 @@ nav li a {
     float: left;
 }
 
-.item {
+/* .item {
     float: left;
     overflow: hidden;
     width: 50%;
@@ -72,7 +90,7 @@ nav li a {
     position: relative;
     overflow: hidden;
     width: 100%;
-}
+} */
 
 h1, h2 {
     font-family: Helvetica, sans-serif;
@@ -119,19 +137,3 @@ footer p {
     vertical-align: inherit;
     font-family: Helvetica, sans-serif;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
